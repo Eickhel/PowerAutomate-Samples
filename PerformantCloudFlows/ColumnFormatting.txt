@@ -1,0 +1,102 @@
+SharePoint Column formatting sample
+======================================================================================================
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "button",
+      "customRowAction": {
+        "action": "editProps"
+      },
+      "attributes": {
+        "class": "ms-fontColor-themePrimary ms-fontColor-themeDark--hover",
+        "title": "Edit properties"
+      },
+      "style": {
+        "border": "0px solid",
+        "padding": "3px 5px 3px 6.5px",
+        "margin": "2px",
+        "width": "33px",
+        "background-color": "transparent",
+        "cursor": "pointer",
+        "display": "inherit"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "attributes": {
+            "iconName": "Edit",
+            "class": "ms-font-l"
+          },
+          "style": {
+            "padding-right": "6px"
+          }
+        }
+      ]
+    },
+    {
+      "elmType": "button",
+      "customRowAction": {
+        "action": "delete"
+      },
+      "attributes": {
+        "class": "ms-fontColor-themePrimary ms-fontColor-themeDark--hover",
+        "title": "Delete"
+      },
+      "style": {
+        "border": "0px solid",
+        "padding": "3px 5px 3px 6.5px",
+        "margin": "2px",
+        "background-color": "transparent",
+        "width": "33px",
+        "cursor": "pointer",
+        "display": "inherit"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "attributes": {
+            "iconName": "Delete",
+            "class": "ms-font-l"
+          },
+          "style": {
+            "padding-right": "6px"
+          }
+        }
+      ]
+    },
+    {
+      "elmType": "button",
+      "customRowAction": {
+        "action": "executeFlow",
+        "actionParams": "{\"id\":\"v1/2e6767a8-e516-e83d-a57c-aa5cf9559c41/df528e18-b06a-4746-a023-44ef0d48567f\", \"headerText\":\"Update records\",\"runFlowButtonText\":\"Update records\"}"
+      },
+      "attributes": {
+        "class": "ms-fontColor-themePrimary ms-fontColor-themeDark--hover",
+        "title": "Update records"
+      },
+      "style": {
+        "border": "0px solid",
+        "padding": "3px 5px 3px 6.5px",
+        "margin": "2px",
+        "background-color": "transparent",
+        "width": "33px",
+        "cursor": "pointer"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "attributes": {
+            "iconName": "Processing",
+            "class": "ms-font-l"
+          },
+          "style": {
+            "padding-right": "6px",
+            "padding-top": "2px"
+          }
+        }
+      ]
+    }
+  ]
+}
